@@ -1,0 +1,28 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output files
+*.o
+*.a
+*.out
+
+# Go specific
+*.test
+*.prof
+
+# Ignore the vendor directory
+vendor/
+
+# Ignore the Go module cache
+/.cache/
+/go.sum
+
+# IDE and editor specific files
+.idea/
+.vscode/
+*.iml
+*.swp
