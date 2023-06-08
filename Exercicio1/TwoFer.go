@@ -1,13 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func main() {
 
 	var nome string
 
 	println("Informe um nome !")
-	fmt.Scan(&nome)
+	scanner := bufio.NewScanner(os.Stdin)
+	if scanner.Scan() {
+		nome = scanner.Text()
+	}
 
 	if nome == "" {
 		fmt.Println("Um para você, um para mim!")
